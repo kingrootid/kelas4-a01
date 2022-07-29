@@ -259,3 +259,25 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+
+footer {
+  background-color: #202020;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+
