@@ -197,3 +197,48 @@ footer {
 }
   height: calc(100vh - 80px);
 }
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-main {
+  padding: 180px 0 100px 0;
+  font-family:'Segoe UI', Arial, sans-serif;
+  background-image: url('pizza1.jpg');
+  background-size: cover;
+  color: white;
+  height: 563px;
+  position: relative;
+  background-position: 60% 8%;
+}
+
+.top-main p{
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+.top-main h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.btn-menu{
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  background-color: rgba(26, 55, 77, 0.7);
+  padding: 10px 50px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 10px 0 10px 0;
+  text-decoration: none;
+}
+
+.btn-menu:hover{
+  background-color: rgb(64, 104, 130);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
