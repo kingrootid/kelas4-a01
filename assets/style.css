@@ -1,46 +1,47 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-nav{
-  background: #1A374D;
+nav {
+  background: #1a374d;
   height: 80px;
   width: 100%;
 }
-label.logo{
+label.logo {
   color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
 }
-nav ul{
+nav ul {
   float: right;
   margin-right: 20px;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a{
+nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
+a.active,
+a:hover {
   background: #406882;
-  transition: .5s;
+  transition: 0.5s;
 }
-.checkbtn{
+.checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -49,7 +50,7 @@ a.active,a:hover{
   cursor: pointer;
   display: none;
 }
-#check{
+#check {
   display: none;
 }
 
@@ -61,7 +62,7 @@ patch-2
 } */
 
 footer {
-  background: #1A374D;
+  background: #1a374d;
 }
 
 .footer-logo {
@@ -184,14 +185,14 @@ footer {
 footer {
   margin-top: 2.5rem;
   padding: 3rem;
-  background: #1A374D;
+  background: #1a374d;
   height: 150px;
   color: white;
 }
 
 .footer-logo {
   float: left;
-  
+
   font-size: 32px;
 }
 
@@ -201,10 +202,10 @@ footer {
 
 .footer-list li {
   padding-bottom: 20px;
-/* } */
+  /* } */
   /* height: calc(100vh - 80px); */
 }
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -212,8 +213,8 @@ footer {
 
 .top-main {
   padding: 180px 0 100px 0;
-  font-family:'Segoe UI', Arial, sans-serif;
-  background-image: url('pizza1.jpg');
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-image: url("pizza1.jpg");
   background-size: cover;
   color: white;
   height: 563px;
@@ -221,18 +222,18 @@ footer {
   background-position: 60% 8%;
 }
 
-.top-main p{
+.top-main p {
   font-size: 35px;
   margin-bottom: 0;
 }
 
-.top-main h1{
+.top-main h1 {
   font-size: 60px;
   margin-bottom: 10px;
   margin-top: 0px;
 }
 
-.btn-menu{
+.btn-menu {
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -244,7 +245,7 @@ footer {
   text-decoration: none;
 }
 
-.btn-menu:hover{
+.btn-menu:hover {
   background-color: rgb(64, 104, 130);
   color: rgb(255, 255, 255);
   transition: 0.3s;
@@ -254,7 +255,7 @@ footer {
   margin-top: 20px;
   text-align: center;
   font-size: 3rem;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
 }
 
 .text-center {
@@ -279,7 +280,18 @@ footer {
   padding: 10px;
 }
 
+.column-3 {
+  float: left;
+  max-width: 33.3%;
+  padding: 10px;
+}
+
 .column-6 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.column-3 img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -289,26 +301,63 @@ footer {
   margin-top: 14px;
   text-align: center;
   font-size: 1.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
+}
+
+.column-3 h4 {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
 }
 
 .column-6 p {
   margin-top: 14px;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
+.column-3 p {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* Blur */
+.column-3 figure img {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.column-3 figure:hover img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+.column-3 figure img {
+  width: 370px;
+  height: 280px;
+}
 @media screen and (max-width: 800px) {
   .column-6 {
     flex: 50%;
     max-width: 50%;
+  }
+  .column-3 {
+    flex: 33.3%;
+    max-width: 33.3%;
   }
 }
 
 /* Layout responsif - membuat dua kolom bertumpuk, bukan bersebelahan */
 @media screen and (max-width: 600px) {
   .column-6 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column-3 {
     flex: 100%;
     max-width: 100%;
   }
